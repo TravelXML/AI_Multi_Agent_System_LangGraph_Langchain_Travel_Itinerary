@@ -9,6 +9,9 @@ A multi-agent travel planning system built with [LangGraph](https://github.com/l
 ```
 START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> itinerary_agent -> END
 ```
+<img width="1442" height="583" alt="image" src="https://github.com/user-attachments/assets/7122c563-ec7e-4166-8c1d-7be96a6b8bff" />
+<img width="1470" height="733" alt="image" src="https://github.com/user-attachments/assets/f366cd21-30e1-4959-a530-a703d72ab4b1" />
+
 
 - **flight_agent** - queries the AviationStack MCP server for airport/airline data, then asks the LLM for route and pricing guidance.
 - **hotel_agent** - searches for hotels via the Tavily MCP server.
@@ -21,7 +24,7 @@ START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> it
     <img
       src="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png"
       alt="Multi-Agent AI Travel Booking System"
-      width="1000"
+      width="1470"
     />
   </a>
 </p>
@@ -33,7 +36,7 @@ START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> it
     <img
       src="./AI-Travel-Booking-System-08-19-2026_05_20_PM.png"
       alt="Multi-Agent AI Travel Booking System"
-      width="1000"
+      width="1470"
     />
   </a>
 </p>
