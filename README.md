@@ -19,7 +19,7 @@ START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> it
 - **sightseeing_agent** - fetches nearby attractions from a custom OpenTripMap MCP server.
 - **itinerary_agent** - combines all of the above into a final itinerary.
 
-<img width="1470" height="733" alt="image" src="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png" />
+<img width="1470" height="2000" alt="image" src="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png" />
  
 
 **Observability**
