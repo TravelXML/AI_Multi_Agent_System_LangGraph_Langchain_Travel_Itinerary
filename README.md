@@ -10,11 +10,11 @@ A multi-agent travel planning system built with [LangGraph](https://github.com/l
 START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> itinerary_agent -> END
 ```
 
-- **flight_agent** — queries the AviationStack MCP server for airport/airline data, then asks the LLM for route and pricing guidance.
-- **hotel_agent** — searches for hotels via the Tavily MCP server.
-- **weather_agent** — extracts the destination city with the LLM, then fetches current conditions and a forecast from a custom OpenWeatherMap MCP server.
-- **sightseeing_agent** — fetches nearby attractions from a custom OpenTripMap MCP server.
-- **itinerary_agent** — combines all of the above into a final itinerary.
+- **flight_agent** - queries the AviationStack MCP server for airport/airline data, then asks the LLM for route and pricing guidance.
+- **hotel_agent** - searches for hotels via the Tavily MCP server.
+- **weather_agent** - extracts the destination city with the LLM, then fetches current conditions and a forecast from a custom OpenWeatherMap MCP server.
+- **sightseeing_agent** - fetches nearby attractions from a custom OpenTripMap MCP server.
+- **itinerary_agent** - combines all of the above into a final itinerary.
 
 State (including token/LLM-call counters and search history) is checkpointed to PostgreSQL via `langgraph-checkpoint-postgres`.
 
@@ -48,18 +48,18 @@ A full architecture diagram is available in [Travel_Planner_Architecture.pptx](.
 
 ### APIs
 
-- [OpenRouter](https://openrouter.ai/) — LLM access
-- [Tavily](https://www.tavily.com/) — hotel/web search MCP
-- [AviationStack](https://aviationstack.com/) — flight data
-- [OpenWeatherMap](https://openweathermap.org/) — weather data
-- [OpenTripMap](https://opentripmap.io/) — sightseeing data
-- [LangSmith](https://smith.langchain.com/) — optional, for tracing
+- [OpenRouter](https://openrouter.ai/) - LLM access
+- [Tavily](https://www.tavily.com/) - hotel/web search MCP
+- [AviationStack](https://aviationstack.com/) - flight data
+- [OpenWeatherMap](https://openweathermap.org/) - weather data
+- [OpenTripMap](https://opentripmap.io/) - sightseeing data
+- [LangSmith](https://smith.langchain.com/) - optional, for tracing
 
 ### Tools
 
 - Python 3.11+
-- [PostgreSQL](https://www.postgresql.org/download/) — persistent memory/checkpointing
-- [uv](https://docs.astral.sh/uv/) — used to install/run the AviationStack MCP server
+- [PostgreSQL](https://www.postgresql.org/download/) - persistent memory/checkpointing
+- [uv](https://docs.astral.sh/uv/) - used to install/run the AviationStack MCP server
 
 ## Setup
 
@@ -99,7 +99,7 @@ OPENTRIPMAP_API_KEY=your_opentripmap_api_key
 
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/langgraph_memory_demo
 
-# Optional — enables LangSmith tracing
+# Optional - enables LangSmith tracing
 LANGCHAIN_API_KEY=your_langsmith_api_key
 LANGCHAIN_PROJECT=ai-travel-planner
 ```
@@ -118,7 +118,7 @@ uv sync                # creates aviationstack-mcp/.venv and installs dependenci
 
 Add `AVIATION_STACK_API_KEY=your_api_key_here` to `aviationstack-mcp/.env`.
 
-`mcp_client.py` invokes this server directly via `aviationstack-mcp/.venv/bin/python`, so no separate process needs to be started manually — the graph launches it on demand.
+`mcp_client.py` invokes this server directly via `aviationstack-mcp/.venv/bin/python`, so no separate process needs to be started manually - the graph launches it on demand.
 
 The weather and sightseeing MCP servers (`custom_weather_mcp_server.py`, `custom_sightseeing_mcp_server.py`) are also launched automatically as stdio subprocesses; nothing extra needs to be run for them.
 
