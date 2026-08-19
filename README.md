@@ -1,7 +1,16 @@
 # AI Travel Planning App using LangGraph, LangSmith and MCP
 
+
 A multi-agent travel planning system built with [LangGraph](https://github.com/langchain-ai/langgraph). Specialized agents for flights, hotels, weather, and sightseeing run as a graph, each pulling live data through [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) servers, and hand off to an itinerary agent that synthesizes everything into a day-by-day plan. Conversation state is persisted in PostgreSQL so plans can be resumed across sessions.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/LangGraph-Multi--Agent-1C3C3C?style=flat-square" />
+  <img src="https://img.shields.io/badge/MCP-Model_Context_Protocol-7B61FF?style=flat-square" />
+  <img src="https://img.shields.io/badge/LangSmith-Observability-2E86AB?style=flat-square" />
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-Memory-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
+</p>
 
 
 ## Architecture
