@@ -19,39 +19,16 @@ START -> flight_agent -> hotel_agent -> weather_agent -> sightseeing_agent -> it
 - **sightseeing_agent** - fetches nearby attractions from a custom OpenTripMap MCP server.
 - **itinerary_agent** - combines all of the above into a final itinerary.
 
-  <p align="center">
-  <a href="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png">
-    <img
-      src="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png"
-      alt="Multi-Agent AI Travel Booking System"
-      width="1470"
-    />
-  </a>
-</p>
+<img width="1470" height="733" alt="image" src="./AI-Travel-Booking-System-08-19-2026_05_18_PM.png" />
+ 
 
 **Observability**
-
-  <p align="center">
-  <a href="./AI-Travel-Booking-System-08-19-2026_05_20_PM.png">
-    <img
-      src="./AI-Travel-Booking-System-08-19-2026_05_20_PM.png"
-      alt="Multi-Agent AI Travel Booking System"
-      width="1470"
-    />
-  </a>
-</p>
-
+<img width="1470" height="733" alt="image" src="./AI-Travel-Booking-System-08-19-2026_05_20_PM.png" />
+ 
 
 **Observability with Langsmith**
-  <p align="center">
-  <a href="./ai-travel-planner-LangSmith-08-19-2026_05_21_PM.png">
-    <img
-      src="./ai-travel-planner-LangSmith-08-19-2026_05_21_PM.png"
-      alt="Multi-Agent AI Travel Booking System"
-      width="1000"
-    />
-  </a>
-</p>
+<img width="1470" height="733" alt="image" src="./ai-travel-planner-LangSmith-08-19-2026_05_21_PM.png" />
+ 
 
 State (including token/LLM-call counters and search history) is checkpointed to PostgreSQL via `langgraph-checkpoint-postgres`.
 
